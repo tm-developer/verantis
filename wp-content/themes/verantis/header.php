@@ -13,22 +13,27 @@
 		<?php wp_head() ?>
     </head>
     <body <?php body_class() ?>>
-		<header id="page-header">
-			<h1 id="page-logo">
-				<?php if (!is_front_page()): ?>
+
+		<header class="align-center">
+
+			<div class="wrapper">
+
+				<h1 class="logo margin bottom-med">
+
 					<a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?> - <?php bloginfo('description') ?>">
-						<?php bloginfo('name') ?>
+						<img src="<?= get_template_directory_uri() ?>/images/verantis_logo_notr.png" alt="<?php bloginfo('name') ?> - <?php bloginfo('description') ?>">
 					</a>
-				<?php else: ?>
-					<span>
-						<?php bloginfo('name') ?>
-					</span>
-				<?php endif; ?>
-			</h1>
-			<?php wp_nav_menu(array(
-				'theme_location' => 'main-nav',
-				'container'      => 'nav',
-				'container_id'   => 'primary-nav'
-			)) ?>
+
+				</h1>
+
+				<?php wp_nav_menu(array(
+					'theme_location' => 'main-nav',
+					'container'      => 'nav',
+					'container_id'   => 'menu',
+					'container_class'=> 'margin bottom'
+				)) ?>
+
+			</div>
+
 		</header>
-		<div id="content-wrap">
+		<div class="content margin bottom">

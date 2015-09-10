@@ -1,15 +1,156 @@
 /* ==========================================================================
-	Imports
+	IMPORTS
 /* ========================================================================== */
 @import 'reset', 'variables';
 
+
 /* ==========================================================================
-	Base
+	BASE
 /* ========================================================================== */
 html {
 	height: 100%;
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	background: black;
+	font-family: 'Neutra2DisplayMedium';
+	font-size: 10px;
+	background: $background-color;
+
+	body{
+		font-size: 2.2rem;
+		color: black;
+		width: 100%;
+		padding: 4rem 2.5rem;
+
+		/* ==========================================================================
+			MODULES + MARGINS (class) + ALIGN (class)
+		/* ========================================================================== */
+		.wrapper{
+			width: 960px;
+			margin: 0 auto;
+		}
+
+		//
+		.margin{
+
+			&.bottom{
+				margin-bottom: 2.5rem;
+			}
+
+			&.bottom-med{
+				margin-bottom: 3.5rem;
+			}
+
+			&.bottom-big{
+				margin-bottom: 5rem;
+			}
+
+		}
+
+		.align-center{
+			text-align: center;
+		}
+		
+	
+
+		/* ==========================================================================
+			HEADER + FOOTER
+		/* ========================================================================== */
+		header, footer{
+			text-align: center;
+
+			.wrapper{
+				width: 60%;
+			}
+			
+			.logo{
+				color: transparent;
+				width: 15rem;
+				display: inline-block;
+
+				a{
+					width: 100%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+
+			#menu{
+			
+				ul{
+				width: 100%;
+
+					li{
+						display: inline-block;
+						width: calc(100%/6 - 10px);
+						vertical-align: top;
+
+						a{
+							color: black;
+							position: relative;
+
+							&:after{
+								content: "";
+								display: block;
+								position: absolute;
+								bottom: -0.3rem;
+								left: 0;
+								width: 0%;
+								height: 0.2rem;
+								background: black;
+								transition: width 300ms linear;
+							}
+
+							&:hover{
+
+								&:after{
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.footer-copyright{
+				padding-top: 2rem;
+			}
+
+		}
+		//FIN HEADER + FOOTER
+		
+		/* ==========================================================================
+			CONTENT
+		/* ========================================================================== */
+		.content{
+			font-size: 2.3rem;
+			background: white;
+			padding-top: 5rem;
+			padding-bottom: 7rem;
+
+			img{
+				width: 80%;
+			}
+
+			.title{
+				text-transform: uppercase;
+				font-size: 4rem;
+			}
+
+			.description{
+				font-family: 'Neutra2DisplayBold';
+			}
+
+			.line{
+				height: 2px;
+			    background: black;
+			    width: 25%;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+		}//FIN CONTENT
+
+	}
+	//FIN BODY
 }

@@ -1,14 +1,62 @@
 /* ==========================================================================
 	Variables
 /* ========================================================================== */
-/* Directories */
-$theme_dir: '/wp-content/themes/yeopress/';
-$images_dir: '/wp-content/themes/yeopress/images/';
 
-/* Colors */
-$color_body_copy: #444;
-$color_link: #26527c;
-$color_opposite: #fff;
+/* COLORS */
+$background-color: #fffaf9;
 
-/* Font Sizes */
-$size_base: 1em;
+/* FONTS */
+@font-face {
+    font-family: 'Neutra2DisplayTitling';
+    src: url('../fonts/Neutra2DisplayTitling.eot');
+    src: url('../fonts/Neutra2DisplayTitling.eot') format('embedded-opentype'),
+         url('../fonts/Neutra2DisplayTitling.woff2') format('woff2'),
+         url('../fonts/Neutra2DisplayTitling.woff') format('woff'),
+         url('../fonts/Neutra2DisplayTitling.ttf') format('truetype'),
+         url('../fonts/Neutra2DisplayTitling.svg#Neutra2DisplayTitling') format('svg');
+}
+@font-face {
+    font-family: 'Neutra2DisplayMedium';
+    src: url('../fonts/Neutra2DisplayMedium.eot');
+    src: url('../fonts/Neutra2DisplayMedium.eot') format('embedded-opentype'),
+         url('../fonts/Neutra2DisplayMedium.woff2') format('woff2'),
+         url('../fonts/Neutra2DisplayMedium.woff') format('woff'),
+         url('../fonts/Neutra2DisplayMedium.ttf') format('truetype'),
+         url('../fonts/Neutra2DisplayMedium.svg#Neutra2DisplayMedium') format('svg');
+}
+@font-face {
+    font-family: 'Neutra2DisplayThin';
+    src: url('../fonts/Neutra2DisplayThin.eot');
+    src: url('../fonts/Neutra2DisplayThin.eot') format('embedded-opentype'),
+         url('../fonts/Neutra2DisplayThin.woff2') format('woff2'),
+         url('../fonts/Neutra2DisplayThin.woff') format('woff'),
+         url('../fonts/Neutra2DisplayThin.ttf') format('truetype'),
+         url('../fonts/Neutra2DisplayThin.svg#Neutra2DisplayThin') format('svg');
+}
+@font-face {
+    font-family: 'Neutra2DisplayLight';
+    src: url('../fonts/Neutra2DisplayLight.eot');
+    src: url('../fonts/Neutra2DisplayLight.eot') format('embedded-opentype'),
+         url('../fonts/Neutra2DisplayLight.woff2') format('woff2'),
+         url('../fonts/Neutra2DisplayLight.woff') format('woff'),
+         url('../fonts/Neutra2DisplayLight.ttf') format('truetype'),
+         url('../fonts/Neutra2DisplayLight.svg#Neutra2DisplayLight') format('svg');
+}
+@font-face {
+    font-family: 'Neutra2DisplayInline';
+    src: url('../fonts/Neutra2DisplayInline.eot');
+    src: url('../fonts/Neutra2DisplayInline.eot') format('embedded-opentype'),
+         url('../fonts/Neutra2DisplayInline.woff2') format('woff2'),
+         url('../fonts/Neutra2DisplayInline.woff') format('woff'),
+         url('../fonts/Neutra2DisplayInline.ttf') format('truetype'),
+         url('../fonts/Neutra2DisplayInline.svg#Neutra2DisplayInline') format('svg');
+}
+@font-face {
+    font-family: 'Neutra2DisplayBold';
+    src: url('../fonts/Neutra2DisplayBold.eot');
+    src: url('../fonts/Neutra2DisplayBold.eot') format('embedded-opentype'),
+         url('../fonts/Neutra2DisplayBold.woff2') format('woff2'),
+         url('../fonts/Neutra2DisplayBold.woff') format('woff'),
+         url('../fonts/Neutra2DisplayBold.ttf') format('truetype'),
+         url('../fonts/Neutra2DisplayBold.svg#Neutra2DisplayBold') format('svg');
+}
