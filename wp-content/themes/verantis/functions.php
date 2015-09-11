@@ -52,3 +52,9 @@ function register_widgets(){
 
 }//end register_widgets()
 add_action( 'widgets_init', 'register_widgets' );
+
+add_filter('wp_mail_from', 'new_mail_from');
+add_filter('wp_mail_from_name', 'new_mail_from_name');
+ 
+function new_mail_from() { return 'admin@verantis.fr'; }
+function new_mail_from_name() { return '[Verantis]'; }

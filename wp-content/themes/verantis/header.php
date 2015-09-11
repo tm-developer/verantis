@@ -34,6 +34,10 @@
 				)) ?>
 
 			</div>
+			
+			<div class="pop-up contact">
+				 <?php echo do_shortcode('[contact-form-7 id="51" title="Formulaire de contact 1"]'); ?>
+			</div>
 
 		</header>
 		<div class="content margin bottom">
