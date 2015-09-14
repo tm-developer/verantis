@@ -17,6 +17,22 @@ function theme_enqueue_scripts(){
 	wp_enqueue_style('global', get_bloginfo('template_url') . '/css/global.css');
 }
 
+
+//ADMIN LOGO
+function my_login_logo_one() { 
+?> 
+	<style type="text/css"> 
+	body.login div#login h1 a {
+		background-image: url('<?= get_bloginfo('template_url'); ?> /images/verantis_logo.png');
+		width: 130px;
+    	background-size: 100%;
+	} 
+	</style>
+<?php 
+} 
+add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+
+
 //Add Featured Image Support
 add_theme_support('post-thumbnails');
 
@@ -52,6 +68,8 @@ function register_widgets(){
 
 }//end register_widgets()
 add_action( 'widgets_init', 'register_widgets' );
+
+// MAIL TO
 
 add_filter('wp_mail_from', 'new_mail_from');
 add_filter('wp_mail_from_name', 'new_mail_from_name');
