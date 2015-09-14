@@ -7,9 +7,9 @@
         <meta charset="<?php bloginfo( 'charset' ) ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
-        <title><?php wp_title( '|', true, 'right' ) ?></title>
-		<meta name="author" content="">
-		<link rel="author" href="">
+        <title>Verantis | <?=  wp_title(''); ?></title>
+        <link rel= "icon" href= "<?= get_template_directory_uri() ?>/favicon.png" type= "image/x-icon" />
+        <meta name="description" content="Artisanat de Thés Parfumés">
 		<?php wp_head() ?>
     </head>
     <body <?php body_class() ?>>
