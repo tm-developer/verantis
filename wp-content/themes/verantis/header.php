@@ -32,7 +32,9 @@
 					'container_id'   => 'menu',
 					'container_class'=> 'margin bottom'
 				)) ?>
-
+				
+				<div class="menu-button mobile"><span></span></div>
+				<div class="clicked hidden mobile"><span></span></div>
 			</div>
 			
 			<div class="pop-up contact">

@@ -24,4 +24,24 @@ jQuery( document ).ready(function() {
 		jQuery('.pop-up').slideUp(500);
 	});
 
+
+	if (window.matchMedia("(max-width: 736px)").matches) {
+		jQuery('.menu').mmenu();
+
+		var API = jQuery(".menu").data( "mmenu" );
+      
+      	jQuery(".menu-button").click(function() {
+        	API.open();
+        	jQuery(".clicked").removeClass("hidden");
+        	jQuery(".menu-button").addClass("hidden");
+      	});
+
+      	jQuery(".clicked").click(function() {
+        	API.close();
+        	jQuery(".menu-button").removeClass("hidden");
+        	jQuery(".clicked").addClass("hidden");
+      	});
+	}
+	
+
 });

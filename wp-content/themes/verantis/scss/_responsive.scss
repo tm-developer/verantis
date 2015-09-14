@@ -1,0 +1,59 @@
+@media only screen and (max-device-width : 1024px){
+	.wrapper{
+		width: 100% !important;
+	}
+}
+@media only screen and (max-device-width : 736px) {
+	html{
+		font-size: 8px !important;
+	}
+	
+	.mobile{
+		display: block !important;
+	}
+
+	ul{
+		height: 100vh;
+
+		li{
+			display: block;
+			height: calc(100vh/6);
+
+			a{
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				height: 100%;
+				line-height: calc(100vh/6);
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+				color: black;
+				background: white;
+			}
+		}
+	}
+	
+	.mm-menu{
+		border-right: 1px solid rgba(0,0,0,0.1) !important;
+	}
+
+	html.mm-opening .mm-slideout{
+		-webkit-transform: translate(90%, 0) !important;
+	    -moz-transform: translate(90%, 0) !important;
+	    -ms-transform: translate(90%, 0) !important;
+	    -o-transform: translate(90%, 0) !important;
+	    transform: translate(90%, 0) !important;
+	}
+
+	html body .pop-up .cross{
+		right: 5% !important;
+		top: -5% !important;
+	}
+	
+	html body form p{
+		margin-bottom: 5px !important;
+	}
+
+	html body form span input, html body form span textarea{
+		width: 100%;
+	}
+}
